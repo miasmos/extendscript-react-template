@@ -8,8 +8,6 @@ gulp.task('default', function() {
         gulp.dest('plugin/jsx/PPRO')
     );
 
-    gulp.src('src/extendscript/CSInterface.js').pipe(gulp.dest('plugin/lib'));
-
     return gulp
         .src('plugin/CSXS/template.xml')
         .pipe(replace(/\{id\}/g, config.name))

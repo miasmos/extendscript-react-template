@@ -42,11 +42,11 @@ export class Body extends React.Component {
                             message: event.target.value
                         })
                     }
-                />{' '}
+                />
                 <br />
                 <button onClick={() => updateEventPanel(message)}>
-                    Show notification{' '}
-                </button>{' '}
+                    Show notification
+                </button>
                 <br />
                 <br />
                 <Reload />
