@@ -1,0 +1,37 @@
+{
+    "name": "extendscript-react-extension",
+    "version": "1.0.0",
+    "main": "plugin/lib/ui.compiled.js",
+    "license": "MIT",
+    "scripts": {
+        "start": "gulp && webpack --watch --mode=development",
+        "build": "gulp && webpack --mode=development"
+    },
+    "extendscript": {
+        "title": "React Example",
+        "width": 300,
+        "height": 300
+    },
+    "devDependencies": {
+        "@babel/core": "^7.6.0",
+        "@babel/plugin-transform-runtime": "^7.6.0",
+        "@babel/preset-env": "^7.6.0",
+        "@babel/preset-react": "^7.0.0",
+        "babel-loader": "^8.0.6",
+        "babel-plugin-styled-components": "^1.10.6",
+        "copy-webpack-plugin": "^5.0.4",
+        "gulp": "^4.0.2",
+        "gulp-rename": "^1.4.0",
+        "gulp-replace": "^1.0.0",
+        "webpack": "^4.39.3",
+        "webpack-cli": "^3.3.8"
+    },
+    "dependencies": {
+        "@babel/runtime": "^7.6.0",
+        "color": "^3.1.2",
+        "react": "^16.9.0",
+        "react-dom": "^16.9.0",
+        "styled-components": "^4.3.2",
+        "styled-reset": "^4.0.0"
+    }
+}
