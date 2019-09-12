@@ -5,11 +5,11 @@ This project serves as a proof of concept for the use of React within Adobe Exte
 # Setup
 
 Follow the basic setup steps provided [here](https://github.com/Adobe-CEP/Samples/tree/master/PProPanel).  
-Install [node](https://nodejs.org/en/)
-Run `npm install gulp -g`
-Run `npm install`
-Run `npm start`
-Open Premiere and navigate to `Window > Extensions > React Example`
+Install [node](https://nodejs.org/en/)  
+Run `npm install gulp -g`  
+Run `npm install`  
+Run `npm start`  
+Open Adobe application and navigate to `Window > Extensions > React Example`
 
 Files may fail to copy due to permissions. If so, either create a symlink or copy the contents of the `plugin` folder to
 
