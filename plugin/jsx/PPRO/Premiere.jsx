@@ -1980,7 +1980,6 @@ $._PPP_ = {
     forceLogfilesOn: function() {
         app.enableQE();
         qe.setDebugDatabaseEntry("CreateLogFilesThatDoNotExist", "true");
-        $._PPP_.updateEventPanel("Force create Log files is set to ON");
     },
 
     insertOrAppendToTopTracks: function() {
@@ -2459,6 +2458,5 @@ $._PPP_ = {
 
     setLocale: function(localeFromCEP) {
         $.locale = localeFromCEP;
-        $._PPP_.updateEventPanel("ExtendScript Locale set to " + localeFromCEP + ".");
     }
 };
