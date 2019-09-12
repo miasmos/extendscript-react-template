@@ -14,11 +14,11 @@
 * written permission of Adobe. 
 **************************************************************************/
 -->	
-<ExtensionManifest Version="5.0" ExtensionBundleId="extendscript-react-extension" ExtensionBundleVersion="11.1"
+<ExtensionManifest Version="5.0" ExtensionBundleId="extendscript-react-template" ExtensionBundleVersion="11.1"
 ExtensionBundleName="React Example" 
 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<ExtensionList>
-		<Extension Id="extendscript-react-extension" Version="10.3.0" />
+		<Extension Id="extendscript-react-template" Version="10.3.0" />
 	</ExtensionList>
 	<ExecutionEnvironment>
 		<HostList>
@@ -33,7 +33,7 @@ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	</ExecutionEnvironment>
 
 	<DispatchInfoList>
-		<Extension Id="extendscript-react-extension">
+		<Extension Id="extendscript-react-template">
 			<DispatchInfo >
 				<Resources>
 					<MainPath>./index.html</MainPath>

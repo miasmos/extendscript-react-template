@@ -17,7 +17,7 @@ const invoke = (method, params) =>
         window.__adobe_cep__.evalScript(
             `$._PPP_.${method}(${stringifiedParams})`,
             (...callbackParams) => {
-                const stringifiedCallbackParams = callbackParams.map(param => {
+                const parsedParams = callbackParams.map(param => {
                     let result = param;
                     switch (typeof param) {
                         case 'string':
@@ -33,7 +33,7 @@ const invoke = (method, params) =>
                     }
                     return result;
                 });
-                resolve(stringifiedCallbackParams);
+                resolve(parsedParams);
             }
         );
     });
@@ -41,8 +41,6 @@ const invoke = (method, params) =>
 export const evalJsxScript = new Proxy(
     {},
     {
-        get: (proxy, method) => (...params) => {
-            invoke(method, params);
-        }
+        get: (proxy, method) => (...params) => invoke(method, params)
     }
 );

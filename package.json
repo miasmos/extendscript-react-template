@@ -1,5 +1,5 @@
 {
-    "name": "extendscript-react-extension",
+    "name": "extendscript-react-template",
     "version": "1.0.0",
     "main": "plugin/lib/ui.compiled.js",
     "license": "MIT",

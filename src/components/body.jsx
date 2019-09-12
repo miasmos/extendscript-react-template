@@ -18,7 +18,7 @@ export class Body extends React.Component {
         new Promise(resolve => this.setState(state, resolve));
 
     getVersionInfo = async () => {
-        const versionInfo = await getVersionInfo();
+        const [versionInfo] = await getVersionInfo();
         await this.setStateAsync({
             versionInfo
         });
@@ -32,21 +32,21 @@ export class Body extends React.Component {
         const { versionInfo, message } = this.state;
         return (
             <BodyStyle>
-                <p>hello world</p>
-                <span>{versionInfo}</span>
-                <br />
+                <p> hello world </p> <span> {versionInfo} </span> <br />
                 <br />
                 <input
                     type="text"
                     value={message}
                     onChange={event =>
-                        this.setState({ message: event.target.value })
+                        this.setState({
+                            message: event.target.value
+                        })
                     }
-                />
+                />{' '}
                 <br />
                 <button onClick={() => updateEventPanel(message)}>
-                    Show notification
-                </button>
+                    Show notification{' '}
+                </button>{' '}
                 <br />
                 <br />
                 <Reload />
