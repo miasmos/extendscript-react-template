@@ -4,10 +4,6 @@ const replace = require('gulp-replace');
 const rename = require('gulp-rename');
 
 gulp.task('default', function() {
-    gulp.src('src/extendscript/Premiere.jsx').pipe(
-        gulp.dest('plugin/jsx/PPRO')
-    );
-
     return gulp
         .src('plugin/CSXS/template.xml')
         .pipe(replace(/\{id\}/g, config.name))

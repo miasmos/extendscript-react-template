@@ -9,7 +9,7 @@ const invoke = (method, params) =>
                     case 'object':
                         return `${prev},${JSON.stringify(param)}`;
                     default:
-                        return `${prev},'${param}'`;
+                        return `${prev},'${param.replace(/\\/g, '\\\\')}'`;
                 }
             }, '')
             .substring(1);

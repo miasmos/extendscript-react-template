@@ -37,7 +37,17 @@ const config = {
     node: {
         fs: 'empty'
     },
-    plugins: []
+    plugins: [
+        new CopyPlugin([
+            {
+                from: path.resolve(
+                    __dirname,
+                    './src/extendscript/Premiere.jsx'
+                ),
+                to: path.resolve(__dirname, './plugin/jsx/PPRO')
+            }
+        ])
+    ]
 };
 
 if (isSupported) {
