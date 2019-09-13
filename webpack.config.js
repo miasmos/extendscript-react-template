@@ -23,6 +23,7 @@ const config = {
         filename: 'ui.compiled.js',
         path: path.resolve(__dirname, 'plugin/lib')
     },
+    devtool: 'source-map',
     module: {
         rules: [
             {
